@@ -1,0 +1,13 @@
+#update{
+    display: none;
+}
+body{
+   
+    font-weight: 600;
+    font-family: 'segoe ui light';
+    letter-spacing: 2px;
+}
+input,textarea{
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+}
