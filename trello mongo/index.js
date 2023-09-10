@@ -1,6 +1,11 @@
 import express from 'express'
 import { bootstrap } from './src/index.router.js'
+import path from 'path'
+import { config } from 'dotenv'
+config({ path: path.resolve('./config/config.env') })
+
+
 const app = express()
-const port = 3000
+const port = process.env.PORT
 bootstrap(app,express)
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

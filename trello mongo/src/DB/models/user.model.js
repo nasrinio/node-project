@@ -23,7 +23,7 @@ const userSchema = new Schema({
         type: String,
         enum: ['female', 'male'],
         default: 'female'
-    },
+    },  
     isDeleted: {// soft delete
         type: Boolean,
         default: false
@@ -31,7 +31,11 @@ const userSchema = new Schema({
     isOnline: {
         type: Boolean,
         default: false
-    }
+    },
+    isConfirmed: {
+        type: Boolean,
+        default: false,
+      },
 }, {
     timestamps: true
 })
